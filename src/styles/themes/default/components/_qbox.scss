@@ -1,0 +1,51 @@
+.qbox__wrapper {
+	align-self: center;
+	margin-top: $space-large;
+}
+
+.qbox__content {
+	@include flex;
+	width: $img-wrapper-large;
+}
+
+.qbox__content a {
+	text-decoration: none;
+}
+
+.qbox__text {
+	color: $c-white;
+	font-family: "Montserrat";
+	font-size: $fontsize-standard;
+}
+
+.qbox__question--content {
+	@include flex;
+	margin: 30% 0 5% 0;
+}
+
+/*media 375px
+******************************************************** */
+
+@media only screen and (max-width: 375px) {
+	.qbox__content {
+		flex-direction: column;
+		margin: 0;
+	}
+	.qbox__question--content {
+		flex-direction: column;
+		margin: 15% 0 1% 0;
+		font-size: $fontsize-small;
+	}
+
+	.qbox__first-question {
+		width: 260px;
+	}
+
+	.qbox__after-question {
+		width: 240px;
+	}
+
+	.qbox__text {
+		font-size: 18px;
+	}
+}

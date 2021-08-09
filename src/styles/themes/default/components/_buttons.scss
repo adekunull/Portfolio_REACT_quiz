@@ -1,0 +1,186 @@
+/*category buttons
+******************************************************** */
+.categories__button {
+	width: $button-large;
+	height: $button-large;
+	background-size: $button-large;
+}
+
+/*back buttons
+******************************************************** */
+
+.back__button {
+	position: absolute;
+	top: 14%;
+	left: 80%;
+	width: $button-x-small;
+	height: $button-small;
+	background-image: url("../img/back-buttons/back.png");
+}
+
+/*repeat buttons
+******************************************************** */
+
+.repeat__button {
+	align-self: center;
+	margin-top: $space-large;
+}
+
+.repeat__img {
+	width: $button-xx-large;
+	height: $button-standard;
+}
+/*start quiz buttons
+******************************************************** */
+
+.startquiz__button {
+	align-self: center;
+	padding-top: 35%;
+}
+
+.startquiz__img {
+	width: $button-xx-large;
+	height: $button-standard;
+}
+
+/*x buttons
+******************************************************** */
+
+.x__button {
+	position: absolute;
+	top: 14%;
+	left: 82%;
+	width: $button-small;
+	height: $button-small;
+	background-image: url("../img/x-buttons/x.png");
+}
+
+/*qbox buttons
+******************************************************** */
+
+.qbox__button {
+	width: $button-xx-large;
+	height: $button-standard;
+	@include flex;
+}
+
+.qbox__button-dnd {
+	width: $button-x-large;
+	height: $button-medium;
+	@include flex;
+}
+
+.qbox__dnd-field {
+	width: $button-x-large;
+	height: $button-medium;
+	background-size: $button-x-large, $button-medium;
+	background-repeat: space;
+}
+
+/*another buttons
+******************************************************** */
+
+.another__button {
+	width: $button-medium;
+	height: $button-medium;
+	background-repeat: no-repeat;
+	margin-bottom: $space-x-small;
+}
+
+/*media 1440px
+******************************************************** */
+
+@media only screen and (max-width: 1440px) {
+	.another__wrapper {
+		top: 23%;
+		left: 87%;
+	}
+
+	.x__button {
+		top: 8%;
+		left: 92%;
+	}
+
+	.repeat__button {
+		margin-top: $space-xx-large;
+	}
+}
+
+/*media 1024px
+******************************************************** */
+
+@media only screen and (max-width: 1024px) {
+}
+
+/*media 375px
+******************************************************** */
+
+@media only screen and (max-width: 375px) {
+	.categories__button {
+		width: $button-medium;
+		height: $button-medium;
+		background-size: $button-medium;
+	}
+
+	.startquiz__button {
+		padding-top: 150%;
+	}
+
+	.startquiz__img {
+		width: $button-x-large;
+		height: $button-75procentage-standard;
+		background-size: $button-x-large $button-75procentage-standard;
+		background-repeat: space;
+	}
+
+	.back__button {
+		top: 3%;
+		left: 10%;
+	}
+
+	.x__button {
+		top: 3%;
+		left: 85%;
+	}
+
+	.qbox__button {
+		width: $button-x-large;
+		height: $button-75procentage-standard;
+		background-size: $button-x-large $button-75procentage-standard;
+		margin: $space-x-small;
+	}
+
+	.qbox__button-dnd {
+		width: $button-x-large;
+		height: $button-standard;
+		background-size: $button-x-large, $button-standard;
+		background-repeat: round;
+		margin: $space-xx-small;
+	}
+
+	.qbox__dnd-field {
+		width: $button-large;
+		height: $button-standard;
+		background-size: $button-large, $button-standard;
+		background-repeat: space;
+	}
+
+	.repeat__button {
+		margin-top: $space-medium;
+	}
+
+	.repeat__img {
+		width: $button-x-large;
+		height: $button-75procentage-standard;
+		background-size: $button-x-large $button-75procentage-standard;
+		background-repeat: space;
+	}
+
+	.another__button {
+		width: $button-standard;
+		height: $button-standard;
+		background-size: $button-standard;
+		background-repeat: no-repeat;
+		margin-bottom: $space-xx-small;
+	}
+}

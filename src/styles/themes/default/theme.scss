@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../global.scss";
+@import "../../mixins.scss";
+
+/* import type components
+**************************************************** */
+@import "./components/buttons";
+@import "./components/wrappers";
+
+/* import name components
+**************************************************** */
+@import "./components/qbox";
+@import "./components/backgrounds";

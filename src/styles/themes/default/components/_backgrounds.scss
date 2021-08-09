@@ -1,0 +1,123 @@
+$categories: "technology", "culture", "motorization", "programming", "history";
+
+@each $i in $categories {
+	// page backgrounds
+	.#{nth($i,1)}__wrapper {
+		background-image: url("../img/background/background_#{nth($i,1)}.png");
+	}
+	.#{nth($i,1)}-quiz__wrapper {
+		background-image: url("../img/background/background_#{nth($i,1)}_quiz.png");
+	}
+	.#{nth($i,1)}-end__wrapper {
+		background-image: url("../img/background/background_#{nth($i,1)}_end.png");
+	}
+	//categories button backgrounds
+	.categories__#{nth($i,1)} {
+		background-image: url("../img/category-buttons/#{nth($i,1)}_icon.png");
+	}
+	.categories__#{nth($i,1)}:hover {
+		background-image: url("../img/category-buttons/#{nth($i,1)}_icon_hover.png");
+	}
+	//repeat button backgrounds
+	.#{nth($i,1)}-end__button-repeat--img {
+		background-image: url("../img/repeat-buttons/button_#{nth($i,1)}_repeat.png");
+	}
+	.#{nth($i,1)}-end__button-repeat--img:hover {
+		background-image: url("../img/repeat-buttons/button_#{nth($i,1)}_repeat_hover.png");
+	}
+	//start quiz button backgrounds
+	.startquiz__#{nth($i,1)} {
+		background-image: url("../img/startquiz-buttons/button_rozpocznij_#{nth($i,1)}.png");
+	}
+	.startquiz__#{nth($i,1)}:hover {
+		background-image: url("../img/startquiz-buttons/button_rozpocznij_#{nth($i,1)}_hover.png");
+	}
+	//qbox backgrounds
+	.qbox__#{nth($i,1)} {
+		background-image: url("../img/qbox/button--#{nth($i,1)}.png");
+	}
+	.qbox__#{nth($i,1)}-dnd {
+		background-image: url("../img/qbox/button-dnd--#{nth($i,1)}.png");
+	}
+	.qbox__#{nth($i,1)}:hover {
+		background-image: url("../img/qbox/button--#{nth($i,1)}_hover.png");
+	}
+	.qbox__dnd--#{nth($i,1)} {
+		background-image: url("../img/qbox/dnd--#{nth($i,1)}.png");
+	}
+	//point field backgrounds
+	.#{nth($i,1)}-end__points {
+		background-image: url("../img/point-field/points_field_#{nth($i,1)}.png");
+	}
+	//question count backgrounds
+	.question-count__#{nth($i,1)} {
+		background-image: url("../img/questioncount-field/counting_question-#{nth($i,1)}.png");
+	}
+}
+
+//another button backgrounds
+
+.another__technology--programming {
+	background-image: url("../img/another/technology__programming_icon.png");
+}
+.another__technology--culture {
+	background-image: url("../img/another/technology__culture_icon.png");
+}
+.another__technology--motorization {
+	background-image: url("../img/another/technology__motorization_icon.png");
+}
+.another__technology--history {
+	background-image: url("../img/another/technology__history_icon.png");
+}
+
+.another__culture--technology {
+	background-image: url("../img/another/culture__technology_icon.png");
+}
+.another__culture--programming {
+	background-image: url("../img/another/culture__programming_icon.png");
+}
+.another__culture--motorization {
+	background-image: url("../img/another/culture__motorization_icon.png");
+}
+.another__culture--history {
+	background-image: url("../img/another/culture__history_icon.png");
+}
+
+.another__motorization--technology {
+	background-image: url("../img/another/motorization__technology_icon.png");
+}
+.another__motorization--culture {
+	background-image: url("../img/another/motorization__culture_icon.png");
+}
+.another__motorization--programming {
+	background-image: url("../img/another/motorization__programming_icon.png");
+}
+.another__motorization--history {
+	background-image: url("../img/another/motorization__history_icon.png");
+}
+
+.another__programming--technology {
+	background-image: url("../img/another/programming__technology_icon.png");
+}
+.another__programming--culture {
+	background-image: url("../img/another/programming__culture_icon.png");
+}
+.another__programming--motorization {
+	background-image: url("../img/another/programming__motorization_icon.png");
+}
+.another__programming--history {
+	background-image: url("../img/another/programming__history_icon.png");
+}
+
+.another__history--technology {
+	background-image: url("../img/another/history__technology_icon.png");
+}
+.another__history--culture {
+	background-image: url("../img/another/history__culture_icon.png");
+}
+.another__history--motorization {
+	background-image: url("../img/another/history__motorization_icon.png");
+}
+.another__history--programming {
+	background-image: url("../img/another/history__programming_icon.png");
+}
